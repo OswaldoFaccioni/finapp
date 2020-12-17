@@ -2,19 +2,19 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
 
-const config = {
-  apiKey: 'AIzaSyAjJG6UrfA1FEzV8qbjmuk8wiUic0uWv-8',
-  authDomain: 'finapp-17474.firebaseapp.com',
-  databaseURL: 'https://finapp-17474.firebaseio.com',
-  projectId: 'finapp-17474',
-  storageBucket: 'finapp-17474.appspot.com',
-  messagingSenderId: '1057184379213',
-  appId: '1:1057184379213:web:8c728d0b7099f194'
-}
+const firebaseConfig = {
+  apiKey: "AIzaSyC8MFp0eugW1ZJtqRB0wI5uZN1YOCVFTSI",
+  authDomain: "faccbills.firebaseapp.com",
+  databaseURL: "https://faccbills.firebaseio.com",
+  projectId: "faccbills",
+  storageBucket: "faccbills.appspot.com",
+  messagingSenderId: "548744067053",
+  appId: "1:548744067053:web:2081681b32a1c1d9d019e4"
+};
 
 export const app = firebase.apps.length
   ? firebase.app()
-  : firebase.initializeApp(config)
+  : firebase.initializeApp(firebaseConfig)
 
 export const db = app.database()
 export const TIMESTAMP = firebase.database.ServerValue.TIMESTAMP
